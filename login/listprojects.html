@@ -1,0 +1,104 @@
+<!--
+  CCTB Website Development
+  IST105
+  Oct 2024
+  Description: This is a simple login website where students are asked to 
+  implement Social Network Login with Firebase
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Firebase App with Authentication with Social Networks"
+    />
+    <title>My Portforio Page</title>
+    <link rel="stylesheet" href="css/core.min.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.1.2/dist/js/coreui.bundle.min.js"
+      integrity="sha384-yoEOGIfJg9mO8eOS9dgSYBXwb2hCCE+AMiJYavhAofzm8AoyVE241kjON695K1v5"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/vendor_bundle.min.css" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://canvascctb.s3.ca-central-1.amazonaws.com/account_1/attachments/95/CCTB_favicon.ico"
+    />
+    <script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="https://matriz-teletrabajo-utc.web.app/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/listprojects.js"></script>
+  </head>
+
+  <body>
+    <h1>Welcome My Portforio Page</h1>
+    <hr />
+    <div style="text-align: c">
+      <ol>
+        <li>
+          <a href="https://assignment1kansukeito.web.app" target="_blank"
+            >Assignment#1</a
+          >
+        </li>
+        <li>
+          <a href="https://assignment2kansukeito-35806.web.app/" target="_blank"
+            >Assignment#2</a
+          >
+        </li>
+        <li>
+          <a href="https://assignment3kansukeito.web.app" target="_blank"
+            >Assignment#3</a
+          ><button
+            data-coreui-toggle="modal"
+            data-coreui-target="#wireframeModal"
+            style="
+              margin-left: 10px;
+              border-radius: 30px;
+              font-size: small;
+              background-color: cornsilk;
+            "
+          >
+            View Wireframe
+          </button>
+        </li>
+      </ol>
+    </div>
+    <div></div>
+    <div class="row">
+      <div class="col-lg-12">
+        <a id="sign-out" class="btn bg-danger mt-4 text-white w-100" href="#"
+          >Sign Out</a
+        >
+      </div>
+    </div>
+
+    <div
+      id="wireframeModal"
+      class="modal fade"
+      tabindex="-1"
+      aria-labelledby="wireframeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Assignment#3 Wireframe</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-coreui-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" style="text-align: center">
+            <img src="./img/wireframe.jpg" alt="wireframe" style="width: 80%" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
